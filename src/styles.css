@@ -1,0 +1,223 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+body {
+  overflow-x: hidden; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("assets/fonts/OpenSans-Bold.eot");
+  src: url("assets/fonts/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("assets/fonts/OpenSans-Bold.woff2") format("woff2"), url("assets/fonts/OpenSans-Bold.woff") format("woff"), url("assets/fonts/OpenSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: "OpenSans";
+  src: url("assets/fonts/OpenSans.eot");
+  src: url("assets/fonts/OpenSans.eot?#iefix") format("embedded-opentype"), url("assets/fonts/OpenSans.woff2") format("woff2"), url("assets/fonts/OpenSans.woff") format("woff"), url("assets/fonts/OpenSans.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "OpenSans";
+  src: url("assets/fonts/OpenSans-Light.eot");
+  src: url("assets/fonts/OpenSans-Light.eot?#iefix") format("embedded-opentype"), url("assets/fonts/OpenSans-Light.woff2") format("woff2"), url("assets/fonts/OpenSans-Light.woff") format("woff"), url("assets/fonts/OpenSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+.btn {
+  font-family: "OpenSans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  width: 100%;
+  cursor: pointer;
+  text-align: center;
+  overflow: hidden;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1), 0 1px 0 #d64d08;
+  border-radius: 5px;
+  background-color: #ff6d00;
+  padding: 0 20px; }
+  .btn-wrap {
+    z-index: 1;
+    width: 100%; }
+  .btn_auto {
+    margin: 0 auto; }
+  .btn_middle {
+    width: 160px;
+    height: 56px; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Futura PT, "Futura PT R", sans-serif;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  font-size: 10px;
+  background: #F3F7FA;
+  color: #000;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased; }
+
+img {
+  height: auto;
+  max-height: 100%;
+  width: 100%;
+  vertical-align: middle; }
+
+li {
+  list-style-type: none; }
+
+p {
+  margin: 0; }
+
+.marker {
+  position: relative;
+  display: inline-block;
+  margin-left: 5px; }
+
+.scrollable-content {
+  padding: 0 12px 0 0; }
+
+.main__wrap {
+  width: 100%;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+.main-list {
+  padding-right: 10px; }
+.main__aside {
+  box-shadow: 0 1px 4px rgba(91, 137, 164, 0.25);
+  border-radius: 5px;
+  background: #fff;
+  padding: 20px 0;
+  margin-bottom: 20px; }
+@media screen and (min-width: 768px) {
+  .main__wrap {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start; }
+  .main__aside {
+    margin-bottom: 0;
+    width: 250px; }
+  .main__content {
+    -ms-flex: 0 0 62%;
+    flex: 0 0 62%;
+    max-width: 62%; } }
+@media screen and (min-width: 992px) {
+  .main__content {
+    -ms-flex: 0 0 68%;
+    flex: 0 0 68%;
+    max-width: 68%; } }
+
+.example-viewport {
+  width: 100%;
+  height: 766px; }
+  .example-viewport::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+    border-radius: 10px; }
+  .example-viewport::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5; }
+  .example-viewport::-webkit-scrollbar-thumb {
+    background-color: #2196f3;
+    border-radius: 10px; }
+
+.card {
+  box-shadow: 0 1px 4px rgba(91, 137, 164, 0.25);
+  border-radius: 5px;
+  background: #fff;
+  margin-bottom: 20px; }
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .card-body__aside {
+      padding: 18px;
+      border-right: 1px solid #eceff1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+    .card-body__company {
+      margin-bottom: 18px;
+      display: flex;
+      justify-content: center; }
+      .card-body__company img {
+        width: 120px;
+        height: 35px; }
+    .card-body .btn-wrap .btn {
+      margin: 0 auto; }
+  @media screen and (min-width: 768px) {
+    .card-body {
+      flex-direction: row; }
+    .card .btn-wrap .btn {
+      margin: 0; } }
+
+/*# sourceMappingURL=styles.css.map */

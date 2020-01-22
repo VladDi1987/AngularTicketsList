@@ -1,0 +1,35 @@
+<aside class="main__aside">
+    <!-- converter -->
+    <div class="converter">
+        <h2 class="converter__head">Валюта</h2>
+        <div class="converter__wrap">
+
+            <div class="converter__button" *ngFor="let c of currency">
+                <input type="radio" name="radio" class="converter-radio"
+                       [id]="c.key" [value]="c.key" [(ngModel)]="selectedCurrency"
+                       (ngModelChange)="onCurrencyChange($event, c.rate, c.symbol)"/>
+                <label class="converter-label" [for]="c.key">
+                    {{ c.key }}
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <!--  controller -->
+    <div class="control">
+        <h2 class="control__head">
+            Количество пересадок
+        </h2>
+        <ul class="control-list">
+            <li class="control-item control-checkbox custom-control-inline"
+                *ngFor="let t of transfer; let i = index;">
+                <input type="radio" class="control-input" name="transfer" [checked]="t.checked"
+                       [id]="t.value" [value]="t.value"  [(ngModel)]="currentTransfer" (ngModelChange)="onTransferChange($event)">
+                <label class="control-label" [for]="t.value">
+                    {{ t.label }}
+                    <span class="control-item__text">Только</span>
+                </label>
+            </li>
+        </ul>
+    </div>
+</aside>

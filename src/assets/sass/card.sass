@@ -1,0 +1,29 @@
+.card
+  box-shadow: 0 1px 4px rgba(91, 137, 164, 0.25)
+  border-radius: 5px
+  background: $white
+  margin-bottom: 20px
+  &-body
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    &__aside
+      padding: 18px
+      border-right: 1px solid #eceff1
+      display: flex
+      flex-direction: column
+      justify-content: center
+    &__company
+      margin-bottom: 18px
+      display: flex
+      justify-content: center
+      & img
+        width: 120px
+        height: 35px
+    & .btn-wrap .btn
+      margin: 0 auto
+  @media screen and (min-width: 768px)
+    &-body
+      flex-direction: row
+    & .btn-wrap .btn
+      margin: 0

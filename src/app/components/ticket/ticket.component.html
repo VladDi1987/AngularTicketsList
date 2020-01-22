@@ -1,0 +1,45 @@
+<div class="card-body">
+    <div class="card-body__aside">
+        <div class="card-body__company">
+            <img src="../assets/static/icon/company.png" alt="">
+        </div>
+        <div class="btn-wrap">
+            <div class="btn btn_middle">
+                Купить за <span class="marker">{{ ticket.price | currencyPipe: curValue$}}</span>
+            </div>
+        </div>
+    </div>
+    <div class="ticket">
+        <div class="ticket__item">
+            <h2 class="ticket__time">
+                {{ ticket.departureTime }}
+            </h2>
+            <div class="ticket__origin">
+                {{ ticket.origin }}, {{ ticket.originName }}
+            </div>
+            <h4 class="ticket__data">
+                {{ ticket.departureDate }}
+            </h4>
+        </div>
+
+        <div class="ticket__item ticket__item_transfer">
+            <h3 class="ticket__transfer">
+                <span>
+                    <span *ngIf="ticket.stops">{{ ticket.stops }} пересадки </span>
+                </span>
+            </h3>
+        </div>
+
+        <div class="ticket__item">
+            <h2 class="ticket__time">
+                {{ ticket.arrivalTime }}
+            </h2>
+            <div class="ticket__origin">
+                {{ ticket.destinationName }}, {{ ticket.destination }}
+            </div>
+            <h4 class="ticket__data">
+                {{ ticket.arrivalDate }}
+            </h4>
+        </div>
+    </div>
+</div>

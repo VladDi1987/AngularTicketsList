@@ -1,0 +1,12 @@
+<div class="text-center" *ngIf="!isLoaded">Loading ...</div>
+
+<cdk-virtual-scroll-viewport itemSize="180" class="example-viewport">
+    <ul class="main-list" *ngIf="isLoaded">
+        <li *cdkVirtualFor="let ticket of tickets | ticketFilter: transferAmount">
+            <app-ticket class="card" [ticket]="ticket"></app-ticket>
+        </li>
+    </ul>
+</cdk-virtual-scroll-viewport>
+
+
+

@@ -1,0 +1,11 @@
+@mixin pseudo($display: block, $pos: absolute, $content: '')
+  content: $content
+  display: $display
+  position: $pos
+  
+@mixin container( $pos: relative, $full-width: 100%, $max-width: 1270px, $m-auto: 0 auto, $padding: 0 15px)
+  position: $pos
+  width: $full-width
+  max-width: $max-width
+  padding: $padding
+  margin: $m-auto

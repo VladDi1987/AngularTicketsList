@@ -1,0 +1,49 @@
+.main
+  &__wrap
+    width: 100%
+    max-width: 860px
+    margin: 0 auto
+    padding: 0 15px
+    display: flex
+    flex-direction: column
+    justify-content: center
+  &-list
+    padding-right: 10px
+  &__aside
+    box-shadow: 0 1px 4px rgba(91, 137, 164, 0.25)
+    border-radius: 5px
+    background: $white
+    padding: 20px 0
+    margin-bottom: 20px
+  @media screen and (min-width: 768px)
+    &__wrap
+      flex-direction: row
+      justify-content: space-between
+      align-items: flex-start
+    &__aside
+      margin-bottom: 0
+      width: 250px
+    &__content
+      -ms-flex: 0 0 62%
+      flex: 0 0 62%
+      max-width: 62%
+  @media screen and (min-width: 992px)
+    &__content
+      -ms-flex: 0 0 68%
+      flex: 0 0 68%
+      max-width: 68%
+
+
+.example-viewport
+  width: 100%
+  height: 766px
+  &::-webkit-scrollbar-track
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)
+    background-color: #F5F5F5
+    border-radius: 10px
+  &::-webkit-scrollbar
+    width: 6px
+    background-color: #F5F5F5
+  &::-webkit-scrollbar-thumb
+    background-color: #2196f3
+    border-radius: 10px

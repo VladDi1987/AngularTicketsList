@@ -1,0 +1,59 @@
+.ticket {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 16px;
+  width: 100%; }
+  .ticket__item {
+    text-align: center; }
+    .ticket__item_transfer {
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+  .ticket__time {
+    color: #4a4a4a;
+    font: 32px "OpenSans";
+    line-height: 26px;
+    margin-bottom: 10px; }
+  .ticket__origin {
+    color: #4a4a4a;
+    font: 12px "OpenSans";
+    line-height: 18px;
+    font-weight: 600; }
+  .ticket__data {
+    color: #8b9497;
+    font: 12px "OpenSans";
+    line-height: 26px; }
+  .ticket__transfer {
+    position: relative;
+    text-align: center;
+    color: #8b9497;
+    font: 10px "OpenSans";
+    font-weight: 600;
+    line-height: 12px; }
+    .ticket__transfer:after {
+      content: "";
+      display: block;
+      position: absolute;
+      content: url("./../../../assets/static/icon/fly.png");
+      left: 50%;
+      transform: translateX(-50%);
+      top: 2px; }
+    .ticket__transfer span {
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%); }
+  @media screen and (min-width: 992px) {
+    .ticket {
+      flex-direction: row;
+      padding: 20px 16px; }
+      .ticket__item {
+        text-align: left; }
+        .ticket__item_transfer {
+          margin-top: 14px; }
+        .ticket__item:last-child {
+          text-align: right; } }
+
+/*# sourceMappingURL=ticket.component.css.map */

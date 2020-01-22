@@ -1,0 +1,15 @@
+<app-header></app-header>
+
+<main class="main">
+    <div class="main__wrap">
+
+        <app-search (transferEmitter)="onTransferEmmit($event)">
+        </app-search>
+
+        <div class="main__content">
+            <app-ticket-list [transferAmount]="transferAmount">
+            </app-ticket-list>
+        </div>
+    </div>
+</main>
+
